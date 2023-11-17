@@ -75,9 +75,8 @@ td:not(:first-child) {
 @media (max-width: 600px) {
     /* Add your styles here */
     table {
-        font-size: xx-small;
         
-        
+        width: auto;
         
     }
     
