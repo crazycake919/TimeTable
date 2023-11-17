@@ -55,7 +55,7 @@ td:not(:first-child) {
     /* Add your styles here */
     table {
         font-size: medium;
-        
+        height: 90vh;
         
         width: 96%;
         margin-left: 2%;
