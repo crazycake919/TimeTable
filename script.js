@@ -186,7 +186,7 @@ function combineRows(day, startHours, length, data) {
 
     const divElement = document.createElement('div');
         divElement.className = 'blockCell'; // You can add a specific class for styling
-        divElement.id = data[5]
+        divElement.id = convertString(data[5]);
         divElement.innerHTML = formatBlock(data)
         // Append the div to the cell
         currentCell.appendChild(divElement);
@@ -201,9 +201,13 @@ function combineRows(day, startHours, length, data) {
     
 }
 function formatBlock(data){
-    let toReturn ="<span class='ime'>"+ data[5]+"</span> <br> <span class='date'>"+data[3]+"</span><br><span class='place'>"+data[4]+"</span>"
+    let toReturn ="<span class='ime'>"+ data[5]+"</span>  <span class='date'>"+data[3]+"</span><span class='place'>"+data[4]+"</span>"
 
     return toReturn
+}
+function convertString(inputString) {
+    // Replace spaces with hyphens using a regular expression
+    return inputString.replace(/ /g, '-');
 }
 // Example usage:
 
