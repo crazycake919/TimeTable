@@ -47,8 +47,8 @@ td:not(:first-child) {
     font-size: larger;
 
 }
-.time{
-
+.date{
+    font-size: small;
 }
 .place{
     font-size: smaller;
@@ -57,18 +57,37 @@ td:not(:first-child) {
     /* Add your styles here */
     table {
         
-        height: 100vh;
-        margin-top: 2%;
+        
+        
         width: 96%;
         margin-left: 2%;
     }
+    .ime{
+        font-size: medium;
+    
+    }
+    .date{
+        font-size: small;
+    }
+    .place{
+        font-size: smaller;
+    }
 
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     /* Add your styles here */
     th, td {
         width: auto;
         
     }
+    .ime{
+        font-size:small
     
+    }
+    .date{
+        font-size: smaller;
+    }
+    .place{
+        font-size: smaller;
+    }
 }
