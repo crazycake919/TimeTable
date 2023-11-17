@@ -76,7 +76,7 @@ td:not(:first-child) {
     /* Add your styles here */
     table {
         
-        width: auto;
+        font-size: xx-small;
         
     }
     
