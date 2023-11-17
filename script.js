@@ -156,8 +156,8 @@ function handleAllClasses(){
     for (let index = 0; index < dataForThisWeek.length; index++) {
         let timeSpan = calculateDuration(dataForThisWeek[index][3]);
         let startTime = getStartHour(dataForThisWeek[index][3]);
-        if(dataForThisWeek[index][5]=="RV RAZVOJ PROGRAMSKE OPREME") timeSpan = 2;
-        if(dataForThisWeek[index][5]=="RV OPERACIJSKI SISTEMI") timeSpan = 2;
+        if(dataForThisWeek[index][5]=="RV RAZVOJ PROGRAMSKE OPREME") timeSpan = 1;
+        if(dataForThisWeek[index][5]=="RV OPERACIJSKI SISTEMI") startTime -=1
         combineRows(dataForThisWeek[index][1], startTime, timeSpan,dataForThisWeek[index] );
 
     }
@@ -201,7 +201,9 @@ function combineRows(day, startHours, length, data) {
     
 }
 function formatBlock(data){
-    let toReturn ="<span class='ime'>"+ data[5]+"</span>  <span class='date'>"+data[3]+"</span><span class='place'>"+data[4]+"</span>"
+    let startTime = data[3];
+    if(data[5]=="RV OPERACIJSKI SISTEMI" ) startTime = "17.00-20.00";
+    let toReturn ="<span class='ime'>"+ data[5]+"</span>  <span class='date'>"+startTime+"</span><span class='place'>"+data[4]+"</span>"
 
     return toReturn
 }
