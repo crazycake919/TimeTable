@@ -1,0 +1,74 @@
+body {
+    color: white
+}
+
+.background-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(15, 15, 15);
+    color: rgb(31, 30, 30);
+    z-index: -1;
+    /* Place the div behind other content */
+}
+
+table {
+    border-collapse: collapse;
+    height: 95vh;
+    margin-top: 2%;
+    width: 90%;
+    margin-left: 5%;
+}
+
+th, td {
+    width: 5%;
+    
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 0px;
+}
+
+td {
+    
+}
+
+
+th:not(:first-child),
+td:not(:first-child) {
+    width: 16%;
+    
+}
+.blockCell{
+    padding: 0px;
+}
+.ime{
+    font-size: larger;
+
+}
+.time{
+
+}
+.place{
+    font-size: smaller;
+}
+@media (max-width: 1000px) {
+    /* Add your styles here */
+    table {
+        
+        height: 100vh;
+        margin-top: 2%;
+        width: 96%;
+        margin-left: 2%;
+    }
+
+}
+@media (max-width: 500px) {
+    /* Add your styles here */
+    th, td {
+        width: auto;
+        
+    }
+    
+}
