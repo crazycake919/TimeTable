@@ -56,7 +56,7 @@ td:not(:first-child) {
 @media (max-width: 1000px) {
     /* Add your styles here */
     table {
-        
+        font-size: medium;
         
         
         width: 96%;
@@ -76,18 +76,21 @@ td:not(:first-child) {
 }
 @media (max-width: 600px) {
     /* Add your styles here */
-    th, td {
-        width: auto;
+    table {
+        font-size: xx-small;
+        
+        
         
     }
+    
     .ime{
-        font-size:small
+        font-size:x-small
     
     }
     .date{
-        font-size: smaller;
+        font-size: xx-small;
     }
     .place{
-        font-size: smaller;
+        font-size: xx-small;
     }
 }
