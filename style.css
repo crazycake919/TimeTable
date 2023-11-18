@@ -2,8 +2,8 @@ body {
     color: white
 }
 :root {
-    --predavanje: #48576d44;
-    --vaje: rgba(115, 87, 128, 0.342);
+    --predavanje: #48576d93;
+    --vaje: rgba(115, 87, 128, 0.479);
 }
 
 .background-div {
