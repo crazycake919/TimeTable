@@ -1,4 +1,6 @@
 // Automatically load the XLS file when the page loads
+//honestly i hope this works
+
 let dataForThisWeek = [];
 let dates;
 window.onload = function () {
